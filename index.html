@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IIUC Programming Club: weekly contests, workshops and project nights for students of International Islamic University Chittagong.">
+  <title>IIUC Programming Club</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <style>html{scroll-behavior:smooth;scroll-padding-top:70px}</style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Site header with main navigation -->
+  <header class="sticky top-0 z-20 bg-white/95 backdrop-blur border-b">
+    <nav aria-label="Main navigation" class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#top" class="font-bold text-xl text-emerald-700">IIUC PC</a>
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="#events" class="hover:text-emerald-600 transition">Events</a></li>
+        <li><a href="#team" class="hover:text-emerald-600 transition">Team</a></li>
+        <li><a href="#join" class="hover:text-emerald-600 transition">Join</a></li>
+      </ul>
+      <button id="menu-btn" type="button" class="md:hidden p-2 text-2xl" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">&#9776;</button>
+    </nav>
+    <ul id="mobile-menu" class="hidden md:hidden border-t px-4 py-3 flex-col gap-2 font-medium">
+      <li><a href="#events" class="block py-1">Events</a></li>
+      <li><a href="#team" class="block py-1">Team</a></li>
+      <li><a href="#join" class="block py-1">Join</a></li>
+    </ul>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section aria-labelledby="hero-title" class="bg-emerald-900 text-white">
+      <div class="max-w-6xl mx-auto px-4 py-20 md:py-28">
+        <h1 id="hero-title" class="text-4xl md:text-6xl font-bold max-w-3xl">Learn to code. Compete. Build together.</h1>
+        <p class="mt-5 text-lg text-emerald-100 max-w-xl">The programming club of International Islamic University Chittagong. Weekly contests, workshops and project nights for every skill level.</p>
+        <a href="#join" class="inline-block mt-8 bg-white text-emerald-900 font-semibold px-6 py-3 rounded-lg hover:bg-emerald-100 transition">Become a member</a>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" aria-labelledby="events-title" class="max-w-6xl mx-auto px-4 py-16">
+      <h2 id="events-title" class="text-3xl font-bold">Upcoming events</h2>
+      <ul class="mt-8 grid gap-6 md:grid-cols-3">
+        <li>
+          <article class="h-full border rounded-xl p-6 hover:border-emerald-500 hover:shadow-lg transition">
+            <p class="text-sm text-emerald-700 font-semibold"><time datetime="2026-11-21">Sat, 21 Nov</time></p>
+            <h3 class="mt-1 text-xl font-bold">Intro to Web Dev</h3>
+            <p class="mt-2 text-gray-600">HTML, CSS and Tailwind in two hours.</p>
+            <button type="button" class="register mt-5 w-full bg-emerald-700 text-white py-2 rounded-lg hover:bg-emerald-800 transition">Register</button>
+          </article>
+        </li>
+        <li>
+          <article class="h-full border rounded-xl p-6 hover:border-emerald-500 hover:shadow-lg transition">
+            <p class="text-sm text-emerald-700 font-semibold"><time datetime="2026-11-28">Sat, 28 Nov</time></p>
+            <h3 class="mt-1 text-xl font-bold">Weekly Contest</h3>
+            <p class="mt-2 text-gray-600">Solve 5 problems in 2 hours. Prizes for the top 3.</p>
+            <button type="button" class="register mt-5 w-full bg-emerald-700 text-white py-2 rounded-lg hover:bg-emerald-800 transition">Register</button>
+          </article>
+        </li>
+        <li>
+          <article class="h-full border rounded-xl p-6 hover:border-emerald-500 hover:shadow-lg transition">
+            <p class="text-sm text-emerald-700 font-semibold"><time datetime="2026-12-05">Sat, 5 Dec</time></p>
+            <h3 class="mt-1 text-xl font-bold">Git &amp; GitHub Night</h3>
+            <p class="mt-2 text-gray-600">Make your first pull request with mentors.</p>
+            <button type="button" class="register mt-5 w-full bg-emerald-700 text-white py-2 rounded-lg hover:bg-emerald-800 transition">Register</button>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Team -->
+    <section id="team" aria-labelledby="team-title" class="bg-emerald-50">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <h2 id="team-title" class="text-3xl font-bold">Executive panel</h2>
+        <ul class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <li><figure class="bg-white rounded-xl p-5 hover:-translate-y-1 hover:shadow-lg transition"><div class="text-5xl" aria-hidden="true">&#129489;</div><figcaption class="mt-2"><strong>Nusrat Jahan</strong><br><span class="text-sm text-gray-600">President</span></figcaption></figure></li>
+          <li><figure class="bg-white rounded-xl p-5 hover:-translate-y-1 hover:shadow-lg transition"><div class="text-5xl" aria-hidden="true">&#128104;</div><figcaption class="mt-2"><strong>Tanvir Hasan</strong><br><span class="text-sm text-gray-600">Vice President</span></figcaption></figure></li>
+          <li><figure class="bg-white rounded-xl p-5 hover:-translate-y-1 hover:shadow-lg transition"><div class="text-5xl" aria-hidden="true">&#128105;</div><figcaption class="mt-2"><strong>Sadia Islam</strong><br><span class="text-sm text-gray-600">General Secretary</span></figcaption></figure></li>
+          <li><figure class="bg-white rounded-xl p-5 hover:-translate-y-1 hover:shadow-lg transition"><div class="text-5xl" aria-hidden="true">&#129492;</div><figcaption class="mt-2"><strong>Arif Chowdhury</strong><br><span class="text-sm text-gray-600">Treasurer</span></figcaption></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Join form -->
+    <section id="join" aria-labelledby="join-title" class="max-w-xl mx-auto px-4 py-16 text-center">
+      <h2 id="join-title" class="text-3xl font-bold">Join the club</h2>
+      <p class="mt-3 text-gray-600">Membership is free for IIUC students.</p>
+      <form id="join-form" class="mt-6 space-y-4 text-left">
+        <div>
+          <label for="name" class="block font-medium mb-1">Full name</label>
+          <input id="name" name="name" type="text" required class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        </div>
+        <div>
+          <label for="sid" class="block font-medium mb-1">Student ID</label>
+          <input id="sid" name="sid" type="text" required class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        </div>
+        <button type="submit" class="w-full bg-emerald-700 text-white py-3 rounded-lg hover:bg-emerald-800 transition">Join now</button>
+        <p id="join-msg" role="status" class="hidden text-emerald-700 font-medium text-center">Welcome aboard! We'll email you soon.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Site footer -->
+  <footer class="bg-gray-900 text-gray-300 text-sm">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center space-y-2">
+      <address class="not-italic">IIUC Programming Club, International Islamic University Chittagong, Kumira, Chattogram<br><a href="mailto:club@example.com" class="underline hover:text-white">club@example.com</a></address>
+      <p><small>&copy; 2026 IIUC Programming Club. Built with HTML and Tailwind CSS.</small></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      menu.classList.toggle('flex', open);
+      btn.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.add('hidden'); menu.classList.remove('flex'); btn.setAttribute('aria-expanded', 'false');
+    }));
+
+    document.querySelectorAll('.register').forEach(b => b.addEventListener('click', () => {
+      b.textContent = 'Registered \u2713';
+      b.classList.replace('bg-emerald-700', 'bg-gray-500');
+      b.classList.remove('hover:bg-emerald-800');
+    }));
+
+    document.getElementById('join-form').addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('join-msg').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
